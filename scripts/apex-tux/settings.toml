@@ -1,0 +1,20 @@
+[interval]
+refresh=60
+
+[clock]
+enabled = false
+
+[mpris2]
+enabled = false
+
+[coindesk]
+enabled = false
+currency = "usd"
+
+[sysinfo]
+enabled = false
+polling_interval = 1000
+
+[image]
+enabled = true
+path = "mech.gif"
