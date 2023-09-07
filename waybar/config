@@ -11,10 +11,9 @@
     "network",
     "bluetooth",
     "temperature",
-    //"custom/loadaverage",
     "cpu",
     "custom/memory",
-    "wireplumber",
+    "custom/volume",
     "clock",
     "clock#2"
   ],
