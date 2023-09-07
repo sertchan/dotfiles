@@ -11,7 +11,7 @@ set_wallpaper() {
         break
       fi
     done
-    swww img "$current_wallpaper" -t center --transition-duration 0.7 --transition-fps 75 
+    swww img "$current_wallpaper" -t center --transition-duration 0.7 --transition-fps 144 
     last_wallpaper="$current_wallpaper"
     sleep 10m 
   done
