@@ -4,8 +4,8 @@ total_download=0
 total_upload=0
 results_json='{"results":[]}'
 
-for i in {1..720}; do
-    result=$(speedtest --secure | grep 'Hosted\|Download:\|Upload:')
+for i in {1..20}; do
+    result=$(speedtest | grep 'Hosted\|Download:\|Upload:')
     download_speed=$(echo "$result" | grep -oP 'Download:\s+\K[0-9.]+')
     upload_speed=$(echo "$result" | grep -oP 'Upload:\s+\K[0-9.]+')
     echo "[$i] Download: $download_speed Mbps, Upload: $upload_speed Mbps" 
