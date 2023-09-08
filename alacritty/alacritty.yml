@@ -1,5 +1,5 @@
 window:
-  opacity: 0.75
+  opacity: 0.76
 
 font:
   size: 10
@@ -25,7 +25,7 @@ colors:
     foreground: '#c5c9c5'
 
   normal:
-    black: '#050505'
+    black: '#0c0b0b'
     blue: '#8ba4b0'
     cyan: '#8ea4a2'
     green: '#8a9a7b'
