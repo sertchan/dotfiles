@@ -13,7 +13,7 @@
     "temperature",
     "cpu",
     "custom/memory",
-    "custom/volume",
+    "wireplumber",
     "clock",
     "clock#2"
   ],
@@ -47,7 +47,7 @@
   "custom/volume": {
     "interval": "once",
     "signal": 8,
-    "format": "V: {}%",
+    "format": "V: {}",
     "exec": "~/.config/scripts/volume/get-volume.sh"
   },
   "tray": {
