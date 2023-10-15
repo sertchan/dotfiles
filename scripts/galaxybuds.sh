@@ -16,15 +16,7 @@ disconnect () {
 }
 
 reset() {
-  if bluetoothctl info | grep -q "Connected: yes"; then
-    bluetoothctl disconnect
-  fi
-
-  while ! bluetoothctl info | grep -q "Connected: yes" > /dev/null; do 
-    bluetoothctl power off
-    bluetoothctl power on
-    bluetoothctl connect 64:5D:F4:64:E3:65
-  done
+   sudo systemctl stop bluetooth.service
 }
 
 if [ "$1" == "connect" ]; then

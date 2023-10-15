@@ -9,10 +9,10 @@
     "tray",
     "network#2",
     "network",
-    "bluetooth",
     "temperature",
     "cpu",
-    "custom/memory",
+    "memory",
+    "bluetooth",
     "wireplumber",
     "clock",
     "clock#2"
