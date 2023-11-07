@@ -10,7 +10,7 @@
 /* Waybar */
 
 window#waybar {
-  background-color: rgba(10, 10, 10, 0.82);
+  background-color: rgba(10, 10, 10, 1.00);
   color: #ffffff;
 }
 
