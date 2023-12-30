@@ -1,7 +1,9 @@
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = { "config" },
-  command = "set filetype=json",
+	pattern = { "config" },
+	command = "set filetype=json",
 })
 
-vim.cmd[[set clipboard+=unnamedplus]]
-vim.cmd[[set number]]
+vim.o.undofile = true
+vim.opt.number = true
+vim.opt.signcolumn = "number"
+vim.cmd([[set clipboard+=unnamedplus]])

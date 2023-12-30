@@ -14,8 +14,8 @@
     "memory",
     "bluetooth",
     "wireplumber",
-    "clock",
-    "clock#2"
+    "clock#2",
+    "clock"
   ],
   "hyprland/workspaces": {
     "on-click": "activate"
@@ -36,11 +36,11 @@
     "interval": 10,
     "format": "{path}: {used}/{total}",
     "path": "/"
- },
+  },
   "bluetooth": {
     "tooltip": false,
     "format-on": "",
-    "format-connected": "B: {device_alias} (BT: {device_battery_percentage}%)",
+    "format-connected": "B: {device_alias}",
     "format-off": "B: Down",
     "format-disabled": "B: Disabled"
   },

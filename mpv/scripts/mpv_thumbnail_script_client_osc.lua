@@ -700,7 +700,7 @@ local thumbnailer_options = {
     -- Use mpv to generate thumbnail even if ffmpeg is found in PATH
     -- ffmpeg does not handle ordered chapters (MKVs which rely on other MKVs)!
     -- mpv is a bit slower, but has better support overall (eg. subtitles in the previews)
-    prefer_mpv = true,
+    prefer_mpv = false,
 
     -- Explicitly disable subtitles on the mpv sub-calls
     mpv_no_sub = false,
@@ -710,7 +710,7 @@ local thumbnailer_options = {
     -- Use "" to disable
     mpv_profile = "",
     -- Hardware decoding
-    mpv_hwdec = "no",
+    mpv_hwdec = "yes",
     -- High precision seek
     mpv_hr_seek = "yes",
     -- Output debug logs to <thumbnail_path>.log, ala <cache_directory>/<video_filename>/000000.bgra.log

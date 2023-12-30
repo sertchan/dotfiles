@@ -38,20 +38,20 @@ foreground = "#c8c093"
 size = 10
 
 [font.bold]
-family = "Jetbrains Mono Nerd Font"
+family = "Jetbrains Mono NF"
 style = "Bold"
 
 [font.bold_italic]
-family = "Jetbrains Mono Nerd Font"
+family = "Jetbrains Mono NF"
 style = "Bold Italic"
 
 [font.italic]
-family = "Jetbrains Mono Nerd Font"
+family = "Jetbrains Mono NF"
 style = "Italic"
 
 [font.normal]
-family = "Jetbrains Mono Nerd Font"
+family = "Jetbrains Mono NF"
 style = "Regular"
 
 [window]
-opacity = 1.00
+opacity = 0.90

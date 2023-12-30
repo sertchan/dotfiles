@@ -13,7 +13,7 @@ set_wallpaper() {
     done
     swww img "$current_wallpaper" -t center --transition-duration 0.7 --transition-fps 75 
     last_wallpaper="$current_wallpaper"
-    sleep 30m 
+    sleep 1h 
   done
 }
 
