@@ -1,0 +1,109 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "fixed-center": false,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "tray",
+    "network#2",
+    "network",
+    "temperature",
+    "cpu",
+    "memory",
+    "bluetooth",
+    "wireplumber",
+    "clock#2",
+    "clock"
+  ],
+  "hyprland/workspaces": {
+    "on-click": "activate"
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 360
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%d-%m-%Y}"
+  },
+  "clock#2": {
+    "interval": 1,
+    "format": "{:%H:%M}"
+  },
+  "disk": {
+    "interval": 10,
+    "format": "{path}: {used}/{total}",
+    "path": "/"
+  },
+  "bluetooth": {
+    "tooltip": false,
+    "format-on": "",
+    "format-connected": "B: {device_alias}",
+    "format-off": "B: Down",
+    "format-disabled": "B: Disabled"
+  },
+  "wireplumber": {
+    "tooltip": false,
+    "format": "V: {volume}%",
+    "format-muted": "Vol: Muted"
+  },
+  "custom/volume": {
+    "interval": "once",
+    "signal": 8,
+    "format": "V: {}",
+    "exec": "~/.config/scripts/volume/get-volume.sh"
+  },
+  "tray": {
+    "tooltip": false,
+    "icon-size": 13,
+    "spacing": 10
+  },
+  "cpu": {
+    "interval": 1,
+    "tooltip": false,
+    "format": "C: {usage}%",
+    "states": {
+      "warning": 65,
+      "critical": 80
+    }
+  },
+  "custom/memory": {
+    "interval": 1,
+    "format": "M: {}GB",
+    "exec": "~/.config/scripts/memory.sh"
+  },
+  "custom/loadaverage": {
+    "interval": 1,
+    "format": "L: {}",
+    "exec": "~/.config/scripts/load-average.sh"
+  },
+  "memory": {
+    "interval": 1,
+    "format": "M: {used:0.1f}G"
+  },
+  "network": {
+    "interval": 1,
+    "interface": "wlp0s20f3",
+    "format": "W: {essid}",
+    "format-linked": "W: Connecting",
+    "format-disconnected": "",
+    "tooltip": false
+  },
+  "network#2": {
+    "interval": 1,
+    "interface": "enp6s0",
+    "format": "E: Connected",
+    "format-linked": "Eth: Connecting",
+    "format-disconnected": "",
+    "tooltip": false
+  },
+  "temperature": {
+    "interval": 1,
+    "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+    "tooltip": false,
+    "critical-threshold": 70,
+    "format": "T: {temperatureC}°C"
+  }
+}
